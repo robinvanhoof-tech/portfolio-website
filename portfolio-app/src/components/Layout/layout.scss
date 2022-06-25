@@ -1,6 +1,14 @@
 @use '/src/variables' as varb;
 @use '../Sidebar/sidebar.scss' as sidebarVarb;
 
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: sidebarVarb.$sidebar-width;
+    height: 100%;
+}
 
 .page {
     width: calc(100% - sidebarVarb.$sidebar-width);
