@@ -1,0 +1,41 @@
+@use './variables' as varb;
+
+// Imports
+@import 'animate.css';
+
+
+
+// Styles
+body {
+    font-family: varb.$default-font;
+    margin: 0;
+    color: varb.$primary-text-color;
+    background-color: varb.$primary-color;
+    overflow: hidden;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Scrollbar
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: varb.$primary-accent-color rgba(varb.$secondairy-color, 0.2);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(varb.$secondairy-color, 0.2);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: varb.$primary-accent-color;
+    border-radius: 20px;
+    width: 5px;
+  }
