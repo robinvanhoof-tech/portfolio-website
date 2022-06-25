@@ -37,7 +37,7 @@ div.text-area {
             font-weight: 500;
 
             white-space: nowrap;
-            overflow: hidden;
+            overflow: hidden;            
             text-overflow: ellipsis;
         }
     }
@@ -153,7 +153,7 @@ div.hello-container {
     height: 100%;
 
     .flex-item {
-        width: max(49%, 350px);
+        width: max(49%, 340px);
         margin: 5px;       
     }
 }
