@@ -1,3 +1,4 @@
+@use '../Sidebar/sidebar.scss' as sidebarVarb;
 @use '/src/variables' as varb;
 
 div.text-area {
@@ -153,7 +154,7 @@ div.hello-container {
     height: 100%;
 
     .flex-item {
-        width: max(49%, 340px);
+        width: max(49%, 300px);
         margin: 5px;       
     }
 }
