@@ -28,10 +28,9 @@ const Home = () => {
                                     startDelay={0}
                                     cursorColor="#4A454A"
                                     multiText={[
-                                        'test test test test test test test'
-                                        /*'Software engineer',
+                                        'Software engineer',
                                         'Full stack web developer',          
-                                        'Game designer',*/
+                                        'Game designer',
                                     ]}
                                     multiTextDelay={1000}
                                     multiTextLoop={true}
