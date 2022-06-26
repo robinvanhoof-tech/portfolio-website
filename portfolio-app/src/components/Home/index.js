@@ -10,7 +10,7 @@ import './home.scss';
 
 const Home = () => {
     return (
-        <div className="home-page">
+        <div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div className="hello-container">                
                 <section className='flex-container'>
@@ -23,7 +23,7 @@ const Home = () => {
                                 I am <span className="name">Robin van Hoof</span>
                             </div>
                             <div className="typewriter-text">
-                                I'm a 
+                                I'm
                                 <TypeWriterEffect
                                     startDelay={0}
                                     cursorColor="#4A454A"
@@ -69,19 +69,3 @@ const Home = () => {
 }
 
 export default Home;
-
-
-
-
-
-
-{/* 
-                <section className='flex-container'>
-                    <div className="flex-item">
-                        
-                    </div>
-                    <div className="flex-item">
-                        
-                    </div>
-                </section>
-                */}
