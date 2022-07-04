@@ -14,10 +14,5 @@
     width: calc(100% - sidebarVarb.$sidebar-width);
     margin-left: sidebarVarb.$sidebar-width;
     height: 100%;
-    position: absolute;
-
-    background-image: url('../../assets/images/connected\ dots.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: absolute;    
 }

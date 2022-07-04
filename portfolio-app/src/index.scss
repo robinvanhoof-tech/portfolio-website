@@ -19,6 +19,16 @@ body {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+// Background
+body {
+    background-image: url('./assets/images/connected\ dots.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
 }
 
 // Scrollbar
@@ -40,6 +50,5 @@ html, body {
 
   *::-webkit-scrollbar-thumb {
     background-color: varb.$primary-accent-color;
-    border-radius: 20px;
     width: 5px;
   }
