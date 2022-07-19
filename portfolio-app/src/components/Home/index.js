@@ -1,13 +1,11 @@
 import React from "react";
 import TypeWriterEffect from 'react-typewriter-effect';
-import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import Portrait from '../../assets/images/portrait.jpeg'
 import './home.scss';
-import { getSelectionRange } from "@testing-library/user-event/dist/utils";
 
 const Home = () => {
 
@@ -40,7 +38,7 @@ const Home = () => {
                                 I am <span className="name">Robin van Hoof</span>
                             </div>
                             <div className="typewriter-text">
-                                I'm
+                                I'm a
                                 <TypeWriterEffect
                                     startDelay={0}
                                     cursorColor="#4A454A"
@@ -61,10 +59,10 @@ const Home = () => {
                                 <span class="text">About Me</span>
                                 <span class="icon"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
                             </a>                                
-                            <a className="social-link" href="https://www.linkedin.com/in/robin-van-hoof-238b9a1b0/" target="_blank">
+                            <a className="social-link" href="https://www.linkedin.com/in/robin-van-hoof-238b9a1b0/" rel="noreferrer" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                            <a className="social-link" href="https://github.com/RobinvHoof" target="_blank">
+                            <a className="social-link" href="https://github.com/RobinvHoof" rel="noreferrer" target="_blank">
                                 <FontAwesomeIcon icon={faGithub}/>
                             </a>
                         </div>

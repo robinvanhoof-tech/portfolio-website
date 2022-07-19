@@ -27,13 +27,13 @@ const Sidebar = () => {
             </nav>
 
             <div className="socials">
-                <a href="https://www.linkedin.com/in/robin-van-hoof-238b9a1b0/" target="_blank">
+                <a href="https://www.linkedin.com/in/robin-van-hoof-238b9a1b0/" rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} color="#4A454A"/>
                 </a>
-                <a href="https://github.com/RobinvHoof" target="_blank">
+                <a href="https://github.com/RobinvHoof" rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faGithub} color="#4A454A"/>
                 </a>
-                <a href="https://twitter.com/ARandomSosig" target="_blank">
+                <a href="https://twitter.com/ARandomSosig" rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faTwitter} color="#4A454A"/>
                 </a>
             </div>
