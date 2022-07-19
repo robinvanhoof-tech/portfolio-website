@@ -5,9 +5,12 @@ import './contact.scss';
 const Contact = () => {
     return (
         <div className="contact-page">
-            <h1>
-                Contact!
-            </h1>
+            <br /><br /><br /><br /><br />
+            <center>
+                <h1>
+                    Under construction!
+                </h1>
+            </center>
         </div>
     )
 }
