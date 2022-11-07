@@ -27,6 +27,12 @@ const ProjectCard = (props) => {
                     <Typography gutterBottom variant="h1" className="title">
                         {props.name}
                     </Typography>
+                    {
+                        props.date !== undefined && props.date !== "" &&                        
+                        <Typography gutterBottom variant="h2" className="date">
+                            {props.date}
+                        </Typography>
+                    }
                     <Typography variant="body2" className="description">
                         {props.description}
                     </Typography>
@@ -132,6 +138,27 @@ const ProjectCard = (props) => {
                                             })
                                         }                                                                                
                                     </Carousel>
+                                </div>
+                            </div>
+                        }
+
+                        {
+                            props.coauthors !== undefined && props.coauthors.length > 0 &&
+                            <div>
+                                <div className="coauthors">
+                                    <hr className="devider" />
+                                    <h1>Co-authors</h1>
+                                    {
+                                        props.coauthors.map(author => {
+                                            return (
+                                                <div className="author">
+                                                    <a target="_blank" href={author.link}> {author.name}</a>
+                                                    <div className="role">{author.role}</div>                                                                                                   
+                                                </div>
+                                            )
+                                        })
+                                        
+                                    }
                                 </div>
                             </div>
                         }
