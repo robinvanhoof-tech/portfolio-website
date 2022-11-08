@@ -130,8 +130,16 @@ const ProjectCard = (props) => {
                                         {
                                             props.images.map(image => {
                                                 return (
-                                                    <div key={image}>
-                                                        <img src={image.media} />
+                                                    <div key={image.text}>
+                                                        {
+                                                            image.media.includes(".mp4") &&
+                                                            <video src={image.media} type="video/mp4" autoPlay={true} muted={true} loop/>
+                                                        }
+                                                        {
+                                                            !image.media.includes(".mp4") &&
+                                                            <img src={image.media} />
+                                                        }
+                                                        
                                                         <p className="legend">{image.text}</p>
                                                     </div>
                                                 )
@@ -151,7 +159,7 @@ const ProjectCard = (props) => {
                                     {
                                         props.coauthors.map(author => {
                                             return (
-                                                <div className="author">
+                                                <div className="author" key={author.name}>
                                                     <a target="_blank" href={author.link}> {author.name}</a>
                                                     <div className="role">{author.role}</div>                                                                                                   
                                                 </div>

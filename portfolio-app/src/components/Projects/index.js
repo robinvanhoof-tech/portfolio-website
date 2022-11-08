@@ -20,7 +20,11 @@ import Ordio_Development_Page from '../../assets/images/Ordio_Development_Page.p
 import Eeventify_Logo from '../../assets/images/Eeventify_Logo.png'
 
 // Rogue Anomaly
-import RA_Banner from '../../assets/images/RA_Banner.png'
+import RA_Logo from '../../assets/images/RA_Logo.png'
+import RA_Demo1 from '../../assets/images/RA_Demo1.mp4'
+import RA_Bossroom from '../../assets/images/RA_Bossroom.png'
+import RA_Weapons from '../../assets/images/RA_Weapons.png'
+import RA_Spells from '../../assets/images/RA_Spells.png'
 
 // Black Sails at Midnight
 import BSAM_Banner from '../../assets/images/BSAM_Banner.png'
@@ -102,7 +106,7 @@ const Projects = () => {
 
                 </ProjectCard>
 
-                <ProjectCard bannerImg={RA_Banner} name="Rogue Anomaly"
+                <ProjectCard bannerImg={RA_Logo} name="Rogue Anomaly"
                     description="Rogue Anomaly is my first project in Game Development. The game is the result of a gamejam-like project, and is entirely designed and developed by a six-man group. The game is develped in the Unity game engine. Rogue Anomaly is a fast paced rogue-like dungeon crawler set in a futuristic space theme. The player uses an array of weapons, spells and abilities to make their way through a spaceship and defeat the final boss to take back control of their mothership."
                     skills={["Game Development", "Game Design", "Unity", "C#", "High-pace development"]}
                     date="September 2022"
@@ -115,10 +119,21 @@ const Projects = () => {
                         {name: "Julian Janssen", link: "https://github.com/JulianJ99", role: "Developer"}                        
                     ]}
                     liveLink="https://fontys-gdt.itch.io/rogue-anomaly"
-                    gitLink="https://github.com/Black-Sails-at-Midnight/Black-Sails-at-Midnight"
-                    images={[]}
+                    gitLink="https://github.com/RobinvHoof/Rogue-Anomaly"
+                    images={[{media: RA_Demo1, text: "Demo"},{media: RA_Weapons, text: "Numerous weapons offer different playstyles"},{media: RA_Spells, text: "Different spells to bring variety to a run"},{media: RA_Bossroom, text: "Final boss for added challenge"}]}
                 >
- 
+                    <div>
+                        <p>
+                            Rogue Anomaly is my first project in Game Development. The game is the result of a gamejam-like project where we designed and developed a game in a three-day timespan. The game is developed in the Unity game engine using C#.
+                        </p><br />
+
+                        <p>
+                            Rogue Anomaly is a fast paced rogue-like dungeon crawler. The player's objective is to make their way through a spaceship killing enemies and clearing rooms one by one to ultimately reach the bridge and defeat the final boss to reclaim their mothership. The player can use a multitude of different weapons and spells to play the game in a playstyle that suits them.
+                        </p><br />
+                        <p>
+                            To add variety and difficulty to the game there is a catch: Overtime a multitude of different modifiers are applied to the player or enemies that effect the game in many different ways making the game more challenging with every modifier activated. As a result, the game becomes progressively harder the longer the player takes to clear it. This also means no two runs will ever be the same! 
+                        </p>
+                    </div>
                 </ProjectCard>
 
                 <ProjectCard bannerImg={BSAM_Banner} name="Black Sails at Midnight"
