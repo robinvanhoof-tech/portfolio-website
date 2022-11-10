@@ -1,0 +1,82 @@
+@use '/src/variables' as varb;
+
+.contact-page {
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.email-wrapper {
+    width: 100%;
+    min-height: 500px;
+    height: 100% !important;
+    margin-top: 5%;
+
+    .email-section {
+        height: 100%;
+    }
+}
+
+.email-card {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    width: 33%;
+    min-width: 300px;
+    padding-left: max(2.5%, 10px);
+    padding-right: max(2.5%, 10px);
+    padding-top: max(1%, 10px);
+    padding-bottom: max(1%, 10px);
+    
+    background-color: rgba(varb.$secondairy-color, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 5px !important;
+
+    .email-title {
+        font-size: max(3vh, 25px);
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: varb.$primary-highlight-color;
+    }
+    
+    .textbox {
+        margin-top: 5px;
+        
+        width: 50%;
+        min-width: 200px;
+        height: 25px;
+
+        color: rgba($color: varb.$primary-accent-color, $alpha: 1);
+        background-color: rgba(varb.$secondairy-color, 0.2);
+        border-color: rgba(varb.$secondairy-color, 0.2);
+        border-radius: 5px;        
+    }
+
+    .message-textbox {
+        resize: none;
+        width: 85%;
+        min-width: 275px;
+
+        min-height: 75px;
+        max-height: 300px;
+        height: 25vh !important;
+    }
+
+    .submit-button {
+        width: 25%;
+        min-width: 150px;
+        height: 25px;
+        color: varb.$primary-text-color;
+
+        box-shadow: 0px 10px 14px -7px rgba(varb.$primary-highlight-color, 0.25);
+        background-color: rgba(varb.$primary-accent-color, 0.5);
+        border-color: rgba(varb.$primary-accent-color, 0.3);
+        border-radius: 5px;
+
+        &:hover {
+            transition: background-color 0.25s;
+            background-color: rgba(varb.$primary-highlight-color, 0.5);
+        }
+    }
+}
