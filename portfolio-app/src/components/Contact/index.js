@@ -36,13 +36,13 @@ const Contact = () => {
             <div className="email-wrapper">                
                 <div className="email-section">
                     <div className="email-card">
-                        <div className="email-title"><center>Send me a message!</center></div>
+                        <div className="email-title"><center>Get in touch!</center></div>
                         <form onSubmit={SendEmail} >
                             <label>Name</label><br />
                             <input name="name" label="Name" type="text" className="textbox" required/>                            
                             <br /><br />
 
-                            <label>Correspondence email</label><br/>
+                            <label>Correspondence email (optional)</label><br/>
                             <input name="email" label="Email" type="text" className="textbox" />
                             <br /><br />
 

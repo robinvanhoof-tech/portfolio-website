@@ -141,10 +141,29 @@ const Projects = () => {
                     skills={["Game Development", "Game Design", "Unity", "C#"]}
                     date="September 2022 - November 2022"
                     coauthors={[
-                        {name: "Nathan Thus", link: "https://github.com/NathanThus", role: "Developer"}
+                        {name: "Nathan Thus", link: "https://github.com/NathanThus", role: "Developer"},                        
                     ]}
                     gitLink="https://github.com/Black-Sails-at-Midnight/Black-Sails-at-Midnight"
-                    images={[{media: BSAM_Banner, text: "Test"}, {media: Banner, text: "Text2"}]}
+                    liveLink="https://fontys-gdt.itch.io/black-sails-at-midnight"
+                    images={[{media: BSAM_Banner, text: "Game"}]}
+                >
+                  
+                </ProjectCard>
+
+                <ProjectCard bannerImg={Banner} name="Het Verborgen Oog"
+                    description="Het Verborgen Oog (The Hidden Eye) is a Game Development project made for a company called 'De Ontdekfabriek', an exploration ground for kids to get to know technology. The game was developed in a six-man group using the Unity Engine. The Hidden Eye is an exploratory game that plays in an underwater setting where the player is tasked with collecting lost treassures."
+                    skills={["Game Development", "Unity", "C#", "Corporate Assignment", "Communication", "User Analysis"]}
+                    date="November 2022 - Present"
+                    coauthors={[
+                        {name: "Nathan Thus", link: "https://github.com/NathanThus", role: "Developer"},
+                        {name: "Jochem Last", link: "https://github.com/JLastig", role: "Developer"},
+                        {name: "Rens Vlooswijk", link: "https://github.com/RensVlooswijk", role: "Developer"},
+                        {name: "Tjerk Zeilstra", link: "https://github.com/TjerkZ", role: "Developer"},
+                        {name: "Rik van Ham", link: "https://github.com/Rick-jpg", role: "Developer"}
+                    ]}
+                    gitLink="https://github.com/Het-verborgen-oog"
+                    images={[{media: BSAM_Banner, text: "Test"}]}
+                    links={[{url: "https://deontdekfabriek.nl/", text: "De Ontdekfabriek"}]}
                 >
                   
                 </ProjectCard>
