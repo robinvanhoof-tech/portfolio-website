@@ -1,6 +1,7 @@
 @use '../Sidebar/sidebar.scss' as sidebarVarb;
 @use '/src/variables' as varb;
 
+// Section Container Classes
 div.hello-container {
     width: 100%;
     height: 100vh;
@@ -160,7 +161,7 @@ div.hello-container {
 
 
 div.about-container {
-    position: absolute;
+    position: relative;
     top: 100%;
     width: 100%;
 
@@ -181,51 +182,10 @@ div.about-container {
 }
 
 div.text-block {
-    background-color: rgba(varb.$secondairy-color, 0.2);
-    backdrop-filter: blur(3px);
-    border-radius: 25px;
     transition: all .2s ease-in-out;
-
-    .title {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: max(2vw, 25px);
-    }
-
-    div.body {
-        position: relative;
-        width: 90%;
-        left: max(5%, 15px);
-        margin-bottom: 15px;                
-
-        div.quote {
-            font-family: varb.$nav-font;
-            color: varb.$secondairy-color;
-            text-shadow: 1px 1px black;
-            font-size: max(1.4vw, 20px);
-
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-bottom: 30px;
-        }
-
-        span.highlight {
-            color: varb.$primary-highlight-color;
-            font-style: italic;
-        }
-
-        p {
-            margin-top: 15px;
-            font-size: max(1vw, 15px);
-        }
-    }
 }
 
 .info-table {    
-    background-color: rgba(varb.$secondairy-color, 0.2);
-    backdrop-filter: blur(3px);
-    border-radius: 25px;
-
     table {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -249,6 +209,71 @@ div.text-block {
                 text-align: left;
                 padding-left: 2vw;                
             }
+        }
+    }
+}
+
+.proficiencies-container {
+    .proficiencies {
+        width: 33%;
+        min-width: 250px;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        .title {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10px;
+            font-size: max(2vw, 25px);
+            text-align: center;
+        }
+
+        
+    }
+}
+
+
+// Modifier Classes
+.text-card {
+    margin-top: max(2.5%, 10px);
+    background-color: rgba(varb.$secondairy-color, 0.2);
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+
+    padding: 5px;
+
+    .title {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: min(max(2vw, 25px), 75px);
+    }
+
+    div.body {
+        position: relative;
+        width: 90%;
+        left: max(5%, 15px);
+        margin-bottom: 15px;
+
+        div.quote {
+            font-family: varb.$nav-font;
+            color: varb.$secondairy-color;
+            text-shadow: 1px 1px black;
+            font-size: min(max(1.4vw, 20px), 50px);
+
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 30px;
+        }
+
+        span.highlight {
+            color: varb.$primary-highlight-color;
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: min(max(1vw, 15px), 20px);
         }
     }
 }

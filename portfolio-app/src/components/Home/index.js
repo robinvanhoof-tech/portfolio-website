@@ -1,5 +1,6 @@
 import React from "react";
 import TypeWriterEffect from 'react-typewriter-effect';
+import ReactSkillbar from 'react-skillbars';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -22,6 +23,8 @@ const Home = () => {
 
         return age;
     }
+
+    var barColor = {title: {text: "#EBEBEB", background: "#4A454A"}, bar: "#48D4CAf0"};
 
     return (
         <div>
@@ -81,7 +84,7 @@ const Home = () => {
             <div className="about-container">
                 <h1 id="about-me"/>               
                 <div className="flex-container">
-                    <div className="flex-item text-block">
+                    <div className="flex-item text-block text-card">
                         <h1 className="title">Programming with passion while exploring the world.</h1>
                         <div className="body">
                             <div className="quote">
@@ -95,11 +98,11 @@ const Home = () => {
                                 Once I got to the age of 12 I furthered my hobby of technology and started exploring the many fields of IT, first starting with projects like building PCs, but also taking my first steps into software development!
                             </p>
                             <p>
-                                From this point onwards I started exploring everything IT, Tech and Software related. To this day I still discover and educate myself about new IT subjects on the daily basis, and do so with love for the field!
+                                From this point onwards I started exploring everything IT, Tech and Software related. To this day I still discover and educate myself about new IT subjects on a daily basis, and do so with love for the field!
                             </p>
                         </div>
                     </div>
-                    <div className="flex-item info-table">
+                    <div className="flex-item info-table text-card">
                         <table>
                             <tr>
                                 <th>Full name</th>
@@ -132,7 +135,37 @@ const Home = () => {
                         </table>                        
                     </div>                    
                 </div>
-            </div>        
+            </div>
+
+            <div className="proficiencies-container">
+                <div className="proficiencies text-card">
+                    <h1 className="title">Proficiencies</h1>
+                    <div className="body">
+                        
+                        <ReactSkillbar animationDuration={1000} barBackground="#221E22aa" animationDelay={500} skills=
+                            {[
+                                {type: "C#", level: 95, color: barColor},
+                                {type: "JavaScript", level: 80, color: barColor},
+                                {type: "HTML/CSS", level: 70, color: barColor},
+                                {type: "C++", level: 60, color: barColor},                                                                        
+                                {type: "SQL", level: 45, color: barColor},
+                            ]} 
+                        /><br/>
+                        <p>
+                            Over the years I have research, learnt and tinkered with many technologies, programming languages and frameworks. Using these I spent much time building academic, personal and industrial products up from scratch with great interest and joy. In doing so I mastered the fundamentals of many of these. My main skill-focus lies in Fullstack C# and JavaScript development including ASP.NET, React and other similar frameworks.
+                        </p>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="experience-container">
+                <div className="work-experience text-card">
+                    
+                </div>
+            </div>  
         </div>
     )
 }
