@@ -33,7 +33,7 @@ const Sidebar = () => {
                 <a href="https://github.com/RobinvHoof" rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faGithub} color="#4A454A"/>
                 </a>
-                <a href="https://twitter.com/ARandomSosig" rel="noreferrer" target="_blank">
+                <a rel="noreferrer" target="_blank">
                     <FontAwesomeIcon icon={faTwitter} color="#4A454A"/>
                 </a>
             </div>
