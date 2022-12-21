@@ -233,6 +233,63 @@ div.text-block {
     }
 }
 
+.skill-container
+{
+    padding: 5px;
+    .flex-container {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+        .flex-item {
+            width: max(30%, 200px);
+            margin: 5px;                         
+        }
+    }
+
+    .skillName {
+        font-size: min(max(1vw, 20px), 25px) !important;
+        text-align: center;
+
+        margin-left: 1%;
+        margin-right: 1%;
+        width: auto;
+    }
+
+    .learnedAt {
+        font-size: min(max(0.5vw, 12px), 20px) !important;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .certification-container {
+        .title {
+            font-size: min(max(0.6vw, 16px), 30px) !important;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .certification {
+            font-size: min(max(0.5vw, 12px), 20px) !important;
+            color: varb.$primary-highlight-color;
+            text-align: center;
+
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5px;
+            width: auto;                 
+        }
+        
+    }
+}
+
 
 // Modifier Classes
 .text-card {
@@ -243,10 +300,17 @@ div.text-block {
 
     padding: 5px;
 
-    .title {
+    h1.title {
         margin-left: 10%;
         margin-right: 10%;
         font-size: min(max(2vw, 25px), 75px);
+    }
+
+    h2.title{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: min(max(1.5vw, 20px), 65px) !important;
     }
 
     div.body {

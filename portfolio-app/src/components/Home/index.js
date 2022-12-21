@@ -4,6 +4,7 @@ import ReactSkillbar from 'react-skillbars';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import SkillCard from './skillCard.js';
 
 import Portrait from '../../assets/images/portrait.jpeg'
 import './home.scss';
@@ -105,12 +106,12 @@ const Home = () => {
                     <div className="flex-item info-table text-card">
                         <table>
                             <tr>
-                                <th>Full name</th>
+                                <th>Name</th>
                                 <th>Robin van Hoof</th>
                             </tr>
                             <tr>
                                 <th>City</th>
-                                <th>Eindhoven</th>
+                                <th>Erp (Region Eindhoven)</th>
                             </tr>
                             <tr>
                                 <th>Date of birth</th>
@@ -140,32 +141,58 @@ const Home = () => {
             <div className="proficiencies-container">
                 <div className="proficiencies text-card">
                     <h1 className="title">Proficiencies</h1>
-                    <div className="body">
-                        
+                    <div className="body">                        
                         <ReactSkillbar animationDuration={1000} barBackground="#221E22aa" animationDelay={500} skills=
                             {[
                                 {type: "C#", level: 95, color: barColor},
                                 {type: "JavaScript", level: 80, color: barColor},
+                                {type: "React", level: 75, color: barColor},
                                 {type: "HTML/CSS", level: 70, color: barColor},
-                                {type: "C++", level: 60, color: barColor},                                                                        
-                                {type: "SQL", level: 45, color: barColor},
+                                {type: "C++", level: 60, color: barColor},                                                                                                        
                             ]} 
                         /><br/>
                         <p>
-                            Over the years I have research, learnt and tinkered with many technologies, programming languages and frameworks. Using these I spent much time building academic, personal and industrial products up from scratch with great interest and joy. In doing so I mastered the fundamentals of many of these. My main skill-focus lies in Fullstack C# and JavaScript development including ASP.NET, React and other similar frameworks.
+                            Over the years I have research, learnt and tinkered with many technologies, programming languages and frameworks. Using these I spent much time building academic, personal and industrial products up from scratch with great interest and joy. In doing so I mastered the fundamentals of many of these.
                         </p>
                         <p>
-                            
+                            My main skill-focus lies in <span className="highlight">Fullstack C# and JavaScript</span> development including both backend development using for example <span className="highlight">.NET</span> and frontend development using <span className="highlight">ASP.NET</span> but also JavaScript/TypeScript frameworks like <span className="highlight">React, Vue</span> and other similar ones. 
+                            Furthermore I am well versed in <span className="highlight">Git</span> usage, both in terms of source control and in terms of Git Automation.
                         </p>
+
+                        <div className="skill-container">
+                            <div className="flex-container">
+                                <SkillCard skill="Software Engineering" learnedAt={["Academic Experience at Fontys University of Applied Science", "Database Maintainer at TopRC"]} certifications={["HBO Bachelor HBO-ICT in Software Engineering"]}/>
+                                <SkillCard skill="Embedded Engineering" learnedAt={["Academic Experience at Fontys University of Applied Science"]} certifications={["HBO Bachelor HBO-ICT in Embedded Engineering"]}/>
+                                <SkillCard skill="3D CAD Design" learnedAt={["Junior Engineer at Team Rembrandts"]} certifications={["Solidworks Associate Degree"]}/>
+                                <SkillCard skill="Database Management"  learnedAt={["Database Maintainer at TopRC"]}/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 className="title">Soft Skills</h2>
+                    <div className="body">
+                        <p>
+                            Besides hardskills I have also gained a large amount of softskills through academic goals and work experience in different fields. 
+                        </p>
+                        <div className="skill-container">
+                            <div className="flex-container">                                                                      
+                                <SkillCard skill="Leadership" learnedAt={["Teamlead Operations at Albert Heijn", "Secretary at s.v. Salve Mundi"]} />
+                                <SkillCard skill="Time management" learnedAt={["Multitude of academic multidisciplinary and international projects", "Teamlead Operations at Albert Heijn"]} />
+                                <SkillCard skill="Crisis Management"  certifications={["Emergency Response Officer Certificate"]}/>
+                                <SkillCard skill="Communication" learnedAt={["Teamlead Operations at Albert Heijn", "Secretary at s.v. Salve Mundi", "Lead Commissioner at s.v. Salve Mundi", "Multidisciplinary project Developer during academic industry projects"]} />
+                            </div>
+                        </div>                            
                     </div>
                 </div>
             </div>
             
+            {/*
             <div className="experience-container">
                 <div className="work-experience text-card">
                     
                 </div>
-            </div>  
+            </div>
+            */}  
         </div>
     )
 }
